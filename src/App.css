@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.game__view {
+  padding: 30px;
+  background-color: #d1d1d1;
+  border-radius: 40px;
+  border: 3px solid #555;
+  box-shadow: inset 0px 0px 20px 2px rgba(50, 50, 50, 0.75);
+}
+
+.game__background {
+  background-color: #555;
+}
+
+.game__grid {
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 8px;
+}
+
+.game__box {
+  background-color: #d1d1d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+
+.game__box:focus {
+  outline: none;
+}
+
+.game__turn-icon {
+  display: inline-block;
+  height: 1.5em;
+  width: 3em;
+}
+.game__winner-icon {
+  height: 1.5em;
+}
+.game__button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.game__button:hover {
+  color: lightcoral;
+} 
+
+.game__winner-wrapper {
+  position: absolute;
+  height: 682px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  opacity: 0.85;
+}
+
+.total {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.total__score {
+  flex: 0.7;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border: 3px solid #d1d1d1;
+  border-radius: 50px;
+}
+
+.total__player {
+  color: #d1d1d1;
+}
+
+.total__divider {
+  background-color: #d1d1d1;
+  width: 3px;
+  height: 100%;
+}
+
+.total__action {
+  flex: 0.25;
+
+  padding: 10px 0;
+  border: 3px solid #d1d1d1;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+}
+
+.total__action:hover {
+  background-color: #fff;
+}
+
+.action {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.action__icon {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.action__name {
+  color: #606060;
+}
